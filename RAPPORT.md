@@ -189,4 +189,25 @@ Ce TP2 m'a permis de mettre en pratique les concepts DevOps dans un contexte And
 ---
 
 \*Rapport rédigé le 24 novembre 2025\*
+## 🔄 Gestion des branches et Pull Requests
+
+### Workflow Git avancé
+Dans cette étape supplémentaire, j'ai mis en place :
+
+1. **Création de branche feature** : `feature/ameliorations`
+2. **Modifications incrémentales** : Amélioration documentation
+3. **Pull Request** : Intégration contrôlée vers main
+4. **Review process** : Validation avant merge
+
+### Bonnes pratiques Git
+- ✅ Branches feature pour nouvelles fonctionnalités
+- ✅ Commits atomiques et descriptifs
+- ✅ Pull requests pour code review
+- ✅ Tests automatiques avant merge
+
+Cette approche garantit :
+- Code quality maintenue
+- Historique Git propre
+- Collaboration facilitée
+- Déploiements sécurisés
 
