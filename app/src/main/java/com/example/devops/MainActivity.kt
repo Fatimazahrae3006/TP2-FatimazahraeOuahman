@@ -1,21 +1,45 @@
-package com.example.simplemessageapp
+package com.example.devops
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.devops.ui.theme.DevopsTheme
 
-class MainActivity : AppCompatActivity() {
-    @Override
-    protected fun onCreate(savedInstanceState: Bundle?) {
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContent {
+            DevopsTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    Greeting("Android")
+                }
+            }
+        }
+    }
+}
 
-        val messageText: TextView = findViewById(R.id.messageText)
-        val changeButton: Button = findViewById(R.id.changeMessageButton)
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
 
-        changeButton.setOnClickListener({ v ->
-            messageText.setText("Button was clicked!")
-        })
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    DevopsTheme {
+        Greeting("Android")
     }
 }
