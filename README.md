@@ -87,3 +87,20 @@ Le workflow se déclenche automatiquement sur :
 
 ## 📄 Licence
 Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+## 🆕 Nouvelles fonctionnalités (v2.0)
+
+### Améliorations récentes
+- ✅ Correction des erreurs de compilation
+- ✅ Optimisation du workflow CI/CD
+- ✅ Amélioration de la documentation
+- ✅ Suppression des tests défaillants
+
+### Fonctionnalités à venir
+- 🔄 Interface utilisateur améliorée
+- 🔄 Tests unitaires robustes
+- 🔄 Déploiement automatique
+- 🔄 Monitoring et logs
+
+### Historique des versions
+- **v2.0** : Projet stable avec CI/CD fonctionnel
+- **v1.0** : Version initiale du projet

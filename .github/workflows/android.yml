@@ -39,6 +39,9 @@ jobs:
     - name: Run tests
       run: ./gradlew test
 
+    - name: Run unit tests
+      run: ./gradlew :app:testDebugUnitTest
+
     - name: Build APK
       run: ./gradlew assembleDebug
 

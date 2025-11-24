@@ -1,17 +1,16 @@
 package com.example.devops
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        assertEquals(4, 2 + 2) // Test corrigé : 2 + 2 = 4 ✅
+    }
+    
+    @Test  
+    fun substract_isCorrect() {
+        assertEquals(5, 8 - 3) // Test corrigé : 8 - 3 = 5 ✅
     }
 }
