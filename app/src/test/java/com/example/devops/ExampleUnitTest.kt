@@ -6,11 +6,11 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 1) // Test qui échoue volontairement !
+        assertEquals(4, 2 + 2) // Test corrigé : 2 + 2 = 4 ✅
     }
     
     @Test  
     fun substract_isCorrect() {
-        assertEquals(4, 8 - 3) // Test qui échoue volontairement !
+        assertEquals(5, 8 - 3) // Test corrigé : 8 - 3 = 5 ✅
     }
 }
